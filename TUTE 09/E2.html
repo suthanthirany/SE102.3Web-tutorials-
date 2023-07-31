@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <button onclick="google()">Go to Google</button>
+    <script>
+        function google() {
+  var confirmBox = confirm("Are you sure you want to go to Google?");
+  if (confirmBox) {
+    window.location.href = "https://www.google.com";
+  } else {
+    alert("You decided to stay");
+  }
+}
+    </script>
+</body>
+</html>

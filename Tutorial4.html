@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+   
+    <form style="border: 1px solid blue; padding: 20px; width: 500px;" >
+        <h1>Registration Form</h1>
+     <label>First Name  </label>
+     <input type="text" name="fn">
+     <br><br>
+     <label>Last Name  </label>
+     <input type="text" name="ln">
+     <br><br>
+     <label>Mobile Number  </label>
+     <input type="text" name="mn">
+     <br><br>
+     <label>Gender</label>
+     <input type="radio" name="g" id="Male" value="m"> Male
+     <input type="radio" name="g" id="Female" value="f"> Female
+     <br><br>
+     <label>Email</label>
+     <input type="email" name="e">
+     <br><br>
+     <label>Favourite Music </label>
+     <input type="checkbox" name="p">POP
+     <input type="checkbox" name="R">Rock
+     <input type="checkbox" name="o">Other
+     <br><br>
+     <label>Additional Details </label>
+     <textarea name="message" rows="5" cols="30"> </textarea>
+     <br><br>
+     <input type="checkbox" name="i">I agree to the terms and conditions
+     <br><br>
+     <input type="submit" value="submit">
+     <input type="reset" value="reset">
+    </form>
+    <br><br>
+    <fieldset style="height: 500%;width: 20%;">
+        <legend><h2>Car Registration</h2></legend>
+        <form>
+            <table height="100" width="200">
+                <tr>
+                    <td>
+            <label>Owner Name</label>
+                    </td>
+                    <td>
+            <input type="text" placeholder="Owner Name" name="on">
+            </td>
+            </tr>           
+            <tr>
+                <td>
+            <label>Email</label>
+            </td>
+            <td>
+            <input type="email" placeholder="Email" name="email">
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <label>Phone Number</label>
+            </td>
+            <td>
+            <input type="number" placeholder="Phone number" name="pn">
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <label>Country</label>
+            </td>
+            <td>
+            <select>
+                <option>Sri Lanka</option>
+                <option>USA</option>
+                <option>Australia</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <label>Car Model </label>
+            </td>
+            <td>
+            <input type="text" name="cm">
+            </td>
+            </tr>
+           <tr>
+            <td>
+            <label>Manufacture </label><br><label>Year &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </label>
+            </td>
+            <td>
+            <select>
+                <option>Select Year</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <label>Transmission</label>
+            </td>
+            <td>
+            <input type="radio" name="r">Manual
+            <input type="radio" name="r">Auto
+            </td>
+            </tr>
+            <tr>
+                <td>
+            <label>Other</label>
+            </td>
+            <td>
+            <textarea rows="5" cols="20"></textarea>
+            </td>
+            </tr>
+            <tr>
+            <input type="checkbox"> I agree to the conditions and terms
+            </tr>
+            <tr>
+                <td>
+            <input type="submit" value="Submit">
+            </td>
+            <td>
+            <input type="reset" value="Reset">
+            </td>
+            </tr>
+            </table>
+        </fieldset>
+        </form>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    <script>
+        function calculateMathematicalOperation(operation, number1, number2) {
+  var result;
+  switch (operation) {
+    case "Addition":
+      result = (number1 + number2);
+      break;
+    case "Subtraction":
+      result = number1 - number2;
+      break;
+    case "Division":
+      result = number1 / number2;
+      break;
+    case "Multiplication":
+      result = number1 * number2;
+      break;
+    default:
+      alert("Invalid operation");
+  }
+  return result;
+}
+
+var operation = prompt("Select an operation: (Addition, Subtraction, Division, Multiplication)");
+var number1 = prompt("Enter the first number:");
+var number2 = prompt("Enter the second number:");
+
+var result = calculateMathematicalOperation(operation, number1, number2);
+
+alert("The result is " + result);
+
+    </script>
+</body>
+</html>

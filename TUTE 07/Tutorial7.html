@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Alert button</title>
+    </head>
+<body>
+
+
+<h3>Question 1</h3>
+<button onclick="myFunction()">Button</button>
+<br><br>
+<h3>Question 2</h3>
+<button onclick="getMarks()" onclick=" calculateTotalAndAverage()">Grade</button>
+<script>
+function myFunction() {
+  alert("This is alert!");
+}
+function getMarks() {
+  var marks = [];
+  for (var i = 0; i < 5; i++) {
+    var mark = prompt("Enter mark " + (i + 1) + ":");
+    marks.push(parseInt(mark));
+  }
+  return marks;
+}
+
+function calculateTotalAndAverage(marks) {
+  var total = 0;
+  for (var i = 0; i < marks.length; i++) {
+    total += marks[i];
+  }
+  var average = total / marks.length;
+  return {
+    total: total,
+    average: average
+  };
+}
+
+function grade(average) {
+  if (average > 30) {
+    alert("Congrats! You passed");
+  } else {
+    alert("Better luck next time");
+  }
+}
+
+var marks = getMarks();
+var result = calculateTotalAndAverage(marks);
+grade(result.average);
+</script>
+
+</body>
+</html>
